@@ -1,0 +1,49 @@
+.contact-us{
+    margin: 0 auto;
+    width: 1100px;
+    margin-top: 800px;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    padding-bottom: 40px;
+}
+
+.contact-us h2 {
+    color: #f8f9fa!important;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.contact-us a{
+    color: #dc3545;
+    margin-top: 40px;
+    background-color: transparent;
+    border: 2px solid #dc3545;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    gap: 30px;
+}
+.container {
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container > input {
+    width: 40%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    border: 2px solid white;
+    color: #fff;
+}
