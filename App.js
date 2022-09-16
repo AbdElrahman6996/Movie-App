@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import axios from 'axios'
-import { api } from './links'
 import Movie from './components/Movies'
+import { api } from './links'
 import './App.css'
-import Search from './components/Search'
-import Contact from './components/Contact'
 
-const App = () => {
+function App() {
 
   const [movies, setMovies] = useState([])
 
@@ -431,13 +429,12 @@ const App = () => {
   }, [])
 
   return (
-    <div className='apps'>
-      <Search/>
-      <Navbar />
-      <Movie movies={movies} />
-      <Contact/>
-    </div>
-  )
+    <main className="App">
+     <Navbar/>
+     <Movie movies={movies} />
+
+    </main>
+  );
 }
 
-export default App
+export default App;
